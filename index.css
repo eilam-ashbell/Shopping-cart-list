@@ -1,0 +1,111 @@
+body {
+  background-color: rgba(243, 243, 243, 0.2);
+}
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Form */
+#form-wrapper {
+  max-width: 20rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+#product-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  color: rgb(114, 114, 114);
+}
+
+#submit-btn {
+  margin-top: 1.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: skyblue;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+#submit-btn:hover {
+  background-color: rgb(120, 195, 224);
+  cursor: pointer;
+}
+
+input {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+select {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* Table */
+#cart-wrapper {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+table {
+  border-spacing: 0px;
+  width: 100%;
+}
+
+th {
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: center;
+  background-color: skyblue;
+  color: white;
+}
+tr {
+  max-width: 100%;
+}
+
+tr:hover {
+  background-color: rgba(135, 207, 235, 0.05);
+}
+td {
+  /* border: 1px solid black; */
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: center;
+}
+
+.product-img {
+  max-width: 4rem;
+}
+
+.remove-btn {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: rgba(250, 128, 114, 0.1);
+  border-radius: 0.5rem;
+  border: none;
+  color: red;
+  font-weight: 600;
+}
+.remove-btn:hover {
+  background-color: rgba(250, 128, 114, 0.15);
+  cursor: pointer;
+}
+
+.title {
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: skyblue;
+}

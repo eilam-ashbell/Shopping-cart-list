@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
     <title>Class project</title>
 </head>
-<body>
-    
+
+<body onload="onPageLoad()">
+    <div class="container">
+        <div id="form-wrapper">
+            <h1 class="title formTitle">Add Product</h1>
+            <form id="product-form">
+                <label for="product-name">Product name:</label>
+                <input type="text" id="product-name" required />
+                <label for="product-price">Product price ($):</label>
+                <input type="number" id="product-price" required />
+                <label for="product-category">Product category:</label>
+                <select id="product-category" required>
+                    <option value="drinks">Drinks</option>
+                    <option value="meat">Meat</option>
+                    <option value="dairy">Dairy</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="basic">Basic</option>
+                </select>
+                <label for="product-category">Product image URL:</label>
+                <input type="text" id="product-img" required />
+                <button type="submit" id="submit-btn">+ Add Product to Cart</button>
+            </form>
+        </div>
+        <div id="cart-wrapper">
+            <h2 class="title cartTitle">My Cart</h2>
+            <table id="cart-table">
+                <thead>
+                    <th>image</th>
+                    <th>Product</th>
+                    <th>Price ($)</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
